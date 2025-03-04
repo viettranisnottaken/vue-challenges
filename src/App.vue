@@ -11,8 +11,11 @@ const router = useRouter()
 const items: Ref<MenuItem[]> = ref([
   {
     label: 'Lifecycle hooks',
-    icon: 'https://primefaces.org/cdn/primevue//images/dock/appstore.svg',
     command: () => router.push('/lifecycle-hooks'),
+  },
+  {
+    label: 'Next DOM update flush',
+    command: () => router.push('/dom-update-flush'),
   },
 ])
 </script>

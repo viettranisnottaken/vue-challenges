@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import LifecycleHooks from '@/views/lifecycle-hooks/LifecycleHooks.vue'
+import DomUpdateFlush from '@/views/dom-update-flush/DomUpdateFlush.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -23,6 +24,11 @@ const router = createRouter({
       path: '/lifecycle-hooks',
       name: 'Lifecycle Hooks',
       component: LifecycleHooks,
+    },
+    {
+      path: '/dom-update-flush',
+      name: 'Next Dom Update Flush',
+      component: DomUpdateFlush,
     },
   ],
 })
