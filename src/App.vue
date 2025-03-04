@@ -1,27 +1,30 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import { ref, type Ref } from 'vue'
+import { RouterView, useRouter } from 'vue-router'
+
+import Menubar from 'primevue/menubar'
+
+import type { MenuItem } from 'primevue/menuitem'
+
+const router = useRouter()
+
+const items: Ref<MenuItem[]> = ref([
+  {
+    label: 'Lifecycle hooks',
+    icon: 'https://primefaces.org/cdn/primevue//images/dock/appstore.svg',
+    command: () => router.push('/lifecycle-hooks'),
+  },
+])
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
+  <Menubar :model="items" />
 
   <RouterView />
 </template>
 
 <style scoped>
-header {
+/* header {
   line-height: 1.5;
   max-height: 100vh;
 }
@@ -81,5 +84,5 @@ nav a:first-of-type {
     padding: 1rem 0;
     margin-top: 1rem;
   }
-}
+} */
 </style>
