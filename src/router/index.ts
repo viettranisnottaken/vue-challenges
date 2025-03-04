@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import LifecycleHooks from '@/views/lifecycle-hooks/LifecycleHooks.vue'
 import DomUpdateFlush from '@/views/dom-update-flush/DomUpdateFlush.vue'
+import PortalChallenge from '@/views/portal/PortalChallenge.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -29,6 +30,11 @@ const router = createRouter({
       path: '/dom-update-flush',
       name: 'Next Dom Update Flush',
       component: DomUpdateFlush,
+    },
+    {
+      path: '/portal',
+      name: 'Portal',
+      component: PortalChallenge,
     },
   ],
 })
