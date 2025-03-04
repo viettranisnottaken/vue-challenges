@@ -17,6 +17,10 @@ const items: Ref<MenuItem[]> = ref([
     label: 'Next DOM update flush',
     command: () => router.push('/dom-update-flush'),
   },
+  {
+    label: 'Dynamic styles',
+    command: () => router.push('/dynamic-styles'),
+  },
 ])
 </script>
 
