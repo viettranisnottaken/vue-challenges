@@ -1,6 +1,6 @@
-import { nextTick, type ObjectDirective } from 'vue'
+import { type ObjectDirective } from 'vue'
 
-const capitalize = (value: string): string => {
+export const capitalize = (value: string): string => {
   if (!value) {
     return ''
   }
@@ -9,18 +9,18 @@ const capitalize = (value: string): string => {
 }
 
 export const capitalizeDirective: ObjectDirective = {
-  mounted(el, { instance }) {
+  mounted(el) {
     const newValue = capitalize(el.value)
 
     el.value = newValue
-    instance?.$emit('update:modelValue', newValue)
+    // makes v-model update again, can cause performance issue
+    el.dispatchEvent(new Event('input'))
   },
-  async beforeUpdate(el, { instance }) {
+  async beforeUpdate(el) {
     const newValue = capitalize(el.value)
-    await nextTick()
 
     el.value = newValue
-
-    instance?.$emit('update:modelValue', newValue)
+    // makes v-model update again, can cause performance issue
+    el.dispatchEvent(new Event('input'))
   },
 }
