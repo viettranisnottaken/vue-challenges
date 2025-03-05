@@ -21,6 +21,10 @@ const items: Ref<MenuItem[]> = ref([
     label: 'Dynamic styles',
     command: () => router.push('/dynamic-styles'),
   },
+  {
+    label: 'Capitalize',
+    command: () => router.push('/capitalize'),
+  },
 ])
 </script>
 
