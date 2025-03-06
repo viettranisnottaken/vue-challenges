@@ -7,6 +7,7 @@ import DynamicStyles from '@/views/dynamic-styles/DynamicStyles.vue'
 import CapitalizeChallenge from '@/views/capitalize/CapitalizeChallenge.vue'
 import UseLocalStorage from '@/views/use-local-storage/UseLocalStorage.vue'
 import VFocus from '@/views/v-focus/VFocus.vue'
+import VDebounceClick from '@/views/v-debounce-click/VDebounceClick.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -59,6 +60,11 @@ const router = createRouter({
       path: '/v-focus',
       name: 'v-focus',
       component: VFocus,
+    },
+    {
+      path: '/v-debounce-click',
+      name: 'v-debounce-click',
+      component: VDebounceClick,
     },
   ],
 })

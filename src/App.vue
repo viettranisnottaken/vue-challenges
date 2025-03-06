@@ -33,6 +33,10 @@ const items: Ref<MenuItem[]> = ref([
     label: 'vFocus',
     command: () => router.push('/v-focus'),
   },
+  {
+    label: 'vDebounceClick',
+    command: () => router.push('/v-debounce-click'),
+  },
 ])
 </script>
 
