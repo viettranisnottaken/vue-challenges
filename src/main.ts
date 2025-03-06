@@ -9,6 +9,7 @@ import router from './router'
 import PrimeVue from 'primevue/config'
 import Aura from '@primeuix/themes/aura'
 import { capitalizeDirective } from './views/capitalize/VModelCapitalize.directive'
+import { vFocus } from './views/v-focus/focus.directive'
 
 const app = createApp(App)
 app.use(PrimeVue, {
@@ -20,5 +21,6 @@ app.use(PrimeVue, {
 app.use(createPinia())
 app.use(router)
 app.directive('capitalize', capitalizeDirective)
+app.directive('focus', vFocus)
 
 app.mount('#app')

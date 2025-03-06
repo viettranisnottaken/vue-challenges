@@ -29,6 +29,10 @@ const items: Ref<MenuItem[]> = ref([
     label: 'Use Local Storage',
     command: () => router.push('/use-local-storage'),
   },
+  {
+    label: 'vFocus',
+    command: () => router.push('/v-focus'),
+  },
 ])
 </script>
 
