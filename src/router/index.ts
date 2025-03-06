@@ -5,6 +5,7 @@ import DomUpdateFlush from '@/views/dom-update-flush/DomUpdateFlush.vue'
 import PortalChallenge from '@/views/portal/PortalChallenge.vue'
 import DynamicStyles from '@/views/dynamic-styles/DynamicStyles.vue'
 import CapitalizeChallenge from '@/views/capitalize/CapitalizeChallenge.vue'
+import UseLocalStorage from '@/views/use-local-storage/UseLocalStorage.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -47,6 +48,11 @@ const router = createRouter({
       path: '/capitalize',
       name: 'Capitalize',
       component: CapitalizeChallenge,
+    },
+    {
+      path: '/use-local-storage',
+      name: 'Use Local Storage',
+      component: UseLocalStorage,
     },
   ],
 })

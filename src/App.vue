@@ -25,6 +25,10 @@ const items: Ref<MenuItem[]> = ref([
     label: 'Capitalize',
     command: () => router.push('/capitalize'),
   },
+  {
+    label: 'Use Local Storage',
+    command: () => router.push('/use-local-storage'),
+  },
 ])
 </script>
 
