@@ -8,6 +8,7 @@ import CapitalizeChallenge from '@/views/capitalize/CapitalizeChallenge.vue'
 import UseLocalStorage from '@/views/use-local-storage/UseLocalStorage.vue'
 import VFocus from '@/views/v-focus/VFocus.vue'
 import VDebounceClick from '@/views/v-debounce-click/VDebounceClick.vue'
+import AuthComponent from '@/views/auth/AuthComponent.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -65,6 +66,11 @@ const router = createRouter({
       path: '/v-debounce-click',
       name: 'v-debounce-click',
       component: VDebounceClick,
+    },
+    {
+      path: '/auth',
+      name: 'Auth',
+      component: AuthComponent,
     },
   ],
 })

@@ -10,6 +10,10 @@ const router = useRouter()
 
 const items: Ref<MenuItem[]> = ref([
   {
+    label: 'Auth',
+    command: () => router.push('/auth'),
+  },
+  {
     label: 'Lifecycle hooks',
     command: () => router.push('/lifecycle-hooks'),
   },
