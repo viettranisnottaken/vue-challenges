@@ -5,7 +5,7 @@ export const getUsersApi = () => {
   const mock = new AxiosMockAdapter(authRequest.request)
 
   mock.onGet('/users').reply(function (config) {
-    if (config.headers?.Authorization !== 'Bearer accessToken') {
+    if (!config.headers?.Authorization?.includes('Bearer accessToken')) {
       return [
         401,
         {

@@ -18,6 +18,7 @@ export async function login() {
 export async function refresh() {
   const { accessToken, refreshToken } = (await refreshApi()).data
 
+  authRequest.setToken(accessToken)
   localStorage.setItem('accessToken', accessToken)
   localStorage.setItem('refreshToken', refreshToken)
 

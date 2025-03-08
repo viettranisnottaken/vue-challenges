@@ -1,7 +1,10 @@
 import type { CreateAxiosDefaults } from 'axios'
 
 import { Request } from './request'
-import { tokenInterceptor } from '../interceptors/token.interceptor'
+import {
+  tokenRequestInterceptor,
+  tokenResponseInterceptor,
+} from '../interceptors/token.interceptor'
 import {
   loggerRequestInterceptor,
   loggerResponseInterceptor,
@@ -26,6 +29,7 @@ if (localStorage.getItem('accessToken')) {
 }
 
 authRequest.interceptors.request.use(...loggerRequestInterceptor())
+authRequest.interceptors.request.use(...tokenRequestInterceptor())
 
 authRequest.interceptors.response.use(...loggerResponseInterceptor())
-authRequest.interceptors.response.use(...tokenInterceptor())
+authRequest.interceptors.response.use(...tokenResponseInterceptor())
