@@ -1,6 +1,7 @@
 # vue-challenges
 
-This template should help get you started developing with Vue 3 in Vite.
+This is mainly to do vue challenges. But I also use it as a playground.
+I added some authentication logic here, including re-auth on 401 responses and pre-auth on token's near death
 
 ## Recommended IDE Setup
 
