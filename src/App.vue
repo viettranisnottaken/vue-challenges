@@ -45,6 +45,10 @@ const items: Ref<MenuItem[]> = ref([
     label: 'Spread animation',
     command: () => router.push('/spread-animation'),
   },
+  {
+    label: 'Parallax animation',
+    command: () => router.push('/parallax-animation'),
+  },
 ])
 </script>
 
