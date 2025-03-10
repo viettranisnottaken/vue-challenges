@@ -9,6 +9,7 @@ import UseLocalStorage from '@/views/use-local-storage/UseLocalStorage.vue'
 import VFocus from '@/views/v-focus/VFocus.vue'
 import VDebounceClick from '@/views/v-debounce-click/VDebounceClick.vue'
 import AuthComponent from '@/views/auth/AuthComponent.vue'
+import SpreadAnim from '@/views/animations/spread/SpreadAnim.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -71,6 +72,11 @@ const router = createRouter({
       path: '/auth',
       name: 'Auth',
       component: AuthComponent,
+    },
+    {
+      path: '/spread-animation',
+      name: 'Spread Animation',
+      component: SpreadAnim,
     },
   ],
 })

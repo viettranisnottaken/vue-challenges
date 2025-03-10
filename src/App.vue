@@ -13,33 +13,37 @@ const items: Ref<MenuItem[]> = ref([
     label: 'Auth',
     command: () => router.push('/auth'),
   },
-  {
-    label: 'Lifecycle hooks',
-    command: () => router.push('/lifecycle-hooks'),
-  },
-  {
-    label: 'Next DOM update flush',
-    command: () => router.push('/dom-update-flush'),
-  },
-  {
-    label: 'Dynamic styles',
-    command: () => router.push('/dynamic-styles'),
-  },
-  {
-    label: 'Capitalize',
-    command: () => router.push('/capitalize'),
-  },
-  {
-    label: 'Use Local Storage',
-    command: () => router.push('/use-local-storage'),
-  },
-  {
-    label: 'vFocus',
-    command: () => router.push('/v-focus'),
-  },
+  // {
+  //   label: 'Lifecycle hooks',
+  //   command: () => router.push('/lifecycle-hooks'),
+  // },
+  // {
+  //   label: 'Next DOM update flush',
+  //   command: () => router.push('/dom-update-flush'),
+  // },
+  // {
+  //   label: 'Dynamic styles',
+  //   command: () => router.push('/dynamic-styles'),
+  // },
+  // {
+  //   label: 'Capitalize',
+  //   command: () => router.push('/capitalize'),
+  // },
+  // {
+  //   label: 'Use Local Storage',
+  //   command: () => router.push('/use-local-storage'),
+  // },
+  // {
+  //   label: 'vFocus',
+  //   command: () => router.push('/v-focus'),
+  // },
   {
     label: 'vDebounceClick',
     command: () => router.push('/v-debounce-click'),
+  },
+  {
+    label: 'Spread animation',
+    command: () => router.push('/spread-animation'),
   },
 ])
 </script>
