@@ -46,12 +46,12 @@ const items: Ref<MenuItem[]> = ref([
     command: () => router.push('/spread-animation'),
   },
   {
-    label: 'Parallax animation',
-    command: () => router.push('/parallax-animation'),
+    label: 'Staggered fade in',
+    command: () => router.push('/staggered-fade-in'),
   },
   {
     label: 'Pov background animation',
-    command: () => router.push('/pov-background-animation'),
+    command: () => router.push('/parallax-bg-animation'),
   },
 ])
 </script>

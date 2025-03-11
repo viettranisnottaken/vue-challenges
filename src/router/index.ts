@@ -10,8 +10,8 @@ import VFocus from '@/views/v-focus/VFocus.vue'
 import VDebounceClick from '@/views/v-debounce-click/VDebounceClick.vue'
 import AuthComponent from '@/views/auth/AuthComponent.vue'
 import SpreadAnim from '@/views/animations/spread/SpreadAnim.vue'
-import ParallaxAnimation from '@/views/animations/parallax/ParallaxAnimation.vue'
-import PovBg from '@/views/animations/pov-background/PovBg.vue'
+import StaggeredFadeIn from '@/views/animations/staggered-fadein/StaggeredFadeIn.vue'
+import ParallaxBg from '@/views/animations/parallax-background/ParallaxBg.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -81,14 +81,14 @@ const router = createRouter({
       component: SpreadAnim,
     },
     {
-      path: '/parallax-animation',
-      name: 'Parallax Animation',
-      component: ParallaxAnimation,
+      path: '/staggered-fade-in',
+      name: 'Staggered Fade In',
+      component: StaggeredFadeIn,
     },
     {
-      path: '/pov-background-animation',
-      name: 'Background Animation',
-      component: PovBg,
+      path: '/parallax-bg-animation',
+      name: 'Parallax Background Animation',
+      component: ParallaxBg,
     },
   ],
 })
