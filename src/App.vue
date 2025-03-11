@@ -49,6 +49,10 @@ const items: Ref<MenuItem[]> = ref([
     label: 'Parallax animation',
     command: () => router.push('/parallax-animation'),
   },
+  {
+    label: 'Pov background animation',
+    command: () => router.push('/pov-background-animation'),
+  },
 ])
 </script>
 

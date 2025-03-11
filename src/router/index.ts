@@ -11,6 +11,7 @@ import VDebounceClick from '@/views/v-debounce-click/VDebounceClick.vue'
 import AuthComponent from '@/views/auth/AuthComponent.vue'
 import SpreadAnim from '@/views/animations/spread/SpreadAnim.vue'
 import ParallaxAnimation from '@/views/animations/parallax/ParallaxAnimation.vue'
+import PovBg from '@/views/animations/pov-background/PovBg.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -83,6 +84,11 @@ const router = createRouter({
       path: '/parallax-animation',
       name: 'Parallax Animation',
       component: ParallaxAnimation,
+    },
+    {
+      path: '/pov-background-animation',
+      name: 'Background Animation',
+      component: PovBg,
     },
   ],
 })
